@@ -10,60 +10,60 @@
 
 */
 
-.heart-icon-btn .sparks {
+.card__icon-button .sparks {
   fill: transparent;
   transition: fill 0.3s ease 0.03s;
 }
 
-.heart-icon-btn .main-body {
+.card__icon-button .main-body {
   fill: transparent;
   transition: fill 0.3s ease 0.03s;
 }
 
-.heart-icon-btn .core {
+.card__icon-button .core {
   fill: transparent;
   transition: fill 0.3s ease 0.03s;
 }
 
-.heart-icon-btn:hover .main-body {
+.card__icon-button:hover .main-body {
   fill: #000;
   transition: fill 0.3s ease 0.05s;
 }
 
-.heart-icon-btn:hover .core {
+.card__icon-button:hover .core {
   fill: #000;
   transition: fill 0.3s ease;
 }
 
-.heart-icon-btn:active .main-body {
+.card__icon-button:active .main-body {
   fill: #ff0000;
   transition: fill 0.3s ease 0.05s;
 }
 
-.heart-icon-btn:active .core {
+.card__icon-button:active .core {
   fill: #ff0000;
   transition: fill 0.3s ease;
 }
 
-.heart-icon-btn .is-liked {
+.card__icon-button .is-liked {
   animation: like 0.3s ease-in 0.1s;
 }
 
-.heart-icon-btn .is-liked .sparks {
+.card__icon-button .is-liked .sparks {
   animation: sparks 0.3s ease-in 0.3s;
 }
 
-.heart-icon-btn .is-liked .contour {
+.card__icon-button .is-liked .contour {
   fill: #ff0000;
   transition: fill 0.3s linear 0.06s;
 }
 
-.heart-icon-btn .is-liked .main-body {
+.card__icon-button .is-liked .main-body {
   fill: #ff0000;
   transition: fill 0.3s linear 0.05s;
 }
 
-.heart-icon-btn .is-liked .core {
+.card__icon-button .is-liked .core {
   fill: #ff0000;
   transition: fill 0.3s linear;
 }
