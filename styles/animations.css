@@ -9,3 +9,89 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.heart-icon-btn .sparks {
+  fill: transparent;
+  transition: fill 0.3s ease 0.03s;
+}
+
+.heart-icon-btn .main-body {
+  fill: transparent;
+  transition: fill 0.3s ease 0.03s;
+}
+
+.heart-icon-btn .core {
+  fill: transparent;
+  transition: fill 0.3s ease 0.03s;
+}
+
+.heart-icon-btn:hover .main-body {
+  fill: #000;
+  transition: fill 0.3s ease 0.05s;
+}
+
+.heart-icon-btn:hover .core {
+  fill: #000;
+  transition: fill 0.3s ease;
+}
+
+.heart-icon-btn:active .main-body {
+  fill: #ff0000;
+  transition: fill 0.3s ease 0.05s;
+}
+
+.heart-icon-btn:active .core {
+  fill: #ff0000;
+  transition: fill 0.3s ease;
+}
+
+.heart-icon-btn .is-liked {
+  animation: like 0.3s ease-in 0.1s;
+}
+
+.heart-icon-btn .is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s;
+}
+
+.heart-icon-btn .is-liked .contour {
+  fill: #ff0000;
+  transition: fill 0.3s linear 0.06s;
+}
+
+.heart-icon-btn .is-liked .main-body {
+  fill: #ff0000;
+  transition: fill 0.3s linear 0.05s;
+}
+
+.heart-icon-btn .is-liked .core {
+  fill: #ff0000;
+  transition: fill 0.3s linear;
+}
+
+@keyframes like {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.25;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes sparks {
+  0% {
+    fill: transparent;
+  }
+
+  50% {
+    fill: #ff0000;
+  }
+
+  100% {
+    fill: transparent;
+  }
+}
