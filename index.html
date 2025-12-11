@@ -283,12 +283,23 @@
         <svg class="dialog__container-icon" width="45" height="45" viewBox="0 0 39 39">
           <use href="svg/floppy.svg#icon"/>
         </svg>
-        <span class="dialog__container-text">Вставьте дискету, чтобы продолжить</span>
+         <span class="dialog__container-text">Вставьте дискету, чтобы продолжить</span>
       </div>
-      <button class="dialog__close-button border-button" type="button" onclick="window['dialog'].close();">
+      <button class="dialog__close-button border-button" type="button" onclick="handleOkClick(event)">
         <span class="button__text">ок</span>
       </button>
     </dialog>
+    <script>
+      function handleSaveClick(event) {
+        event.preventDefault();
+        window['dialog'].showModal();
+      }
+
+      function handleOkClick(event) {
+        event.preventDefault(); 
+        window['dialog'].close();
+      }
+    </script>
     <script src="scripts/like.js"></script>
   </body>
 </html>
